@@ -1,11 +1,19 @@
-const randomNumbers = [];
+// Higher Order Array Methods
 
-for (i = 0; i < 25; i++) {
-    randomNumbers.push(Math.floor(Math.random() * 100) + 1)
+const nums = [];
+
+for (i = 0; i < 30; i++) {
+    nums.push(Math.floor(Math.random() * 100) + 1);
 }
 
-randomNumbers.forEach(el => console.log(el));
+// Filter Method
 
-randomNumbers.map(el => el * 2);
+console.log(nums.filter(el => el % 2 == 0));
 
-randomNumbers.reduce((sum, el) => sum + el);
+// Map Method
+
+console.log(nums.map(el => el * 2));
+
+// Reduce Method
+
+console.log(nums.reduce(sum, el) => sum + el);

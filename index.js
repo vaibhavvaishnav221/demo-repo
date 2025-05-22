@@ -17,3 +17,9 @@ console.log(nums.map(el => el * 2));
 // Reduce Method
 
 console.log(nums.reduce((sum, el) => sum + el));
+
+// ForEach Array Method
+
+nums.forEach(element => {
+    console.log(element);
+});

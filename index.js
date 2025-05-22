@@ -16,4 +16,4 @@ console.log(nums.map(el => el * 2));
 
 // Reduce Method
 
-console.log(nums.reduce(sum, el) => sum + el);
+console.log(nums.reduce((sum, el) => sum + el));
